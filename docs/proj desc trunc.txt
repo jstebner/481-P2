@@ -1,0 +1,14 @@
+32x32x1 -> magic -> 10x1 probs ig
+mse
+sigmoid (maybe try w others)
+
+archs:
+- multi out perceptron ie no hidden, alph = 4^i for i in [0,4]Z
+- vary depth in [1,4]Z and 64 units, alph = 1
+- 2 hidden (256units, 64units), alpha = 4^i for i in [-3,1]Z
+
+3F CV based on misclass
+
+init weights indep from unif [-1,1]R
+
+run for max 1000 iters, but 50 iters with 2k datapoints on 4x512 layers takes 1 min
